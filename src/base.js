@@ -138,8 +138,12 @@ export default class Language {
   }
 
   segment (text) {
-    const paragraphs = text.split(/(\n{2,})/)
+    
     const sentences = []
+    if (text === null || text === undefined || text.length == 0) {
+      return sentences;
+    }
+    const paragraphs = text.split(/(\n{2,})/)
     // Iterate over each paragraph.
     for (let i = 0; i < paragraphs.length; i++) {
       const paragraph = paragraphs[i]
