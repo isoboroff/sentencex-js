@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/santhoshtr/sentencex-js.git"
+    "url": "git+https://github.com/isoboroff/sentencex-js.git"
   },
   "keywords": [
     "nlp",
@@ -38,20 +38,22 @@
     "node": ">=14"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.15",
-    "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@rollup/plugin-json": "^6.0.0",
-    "eslint": "^8.50.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "mocha": "^10.2.0",
-    "prettier": "^3.0.3",
-    "rollup": "^3.29.3",
-    "rollup-plugin-esbuild": "^6.0.0"
+    "@babel/eslint-parser": "^7.27.1",
+    "@babel/plugin-syntax-import-assertions": "^7.27.1",
+    "@eslint/js": "^9.27.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.18.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.1.0",
+    "mocha": "^11.4.0",
+    "prettier": "^3.5.3",
+    "rollup": "^4.41.0",
+    "rollup-plugin-esbuild": "^6.2.1"
   },
   "dependencies": {
-    "glob": "^9.3.5"
+    "eslint-plugin-mocha": "^11.0.0",
+    "glob": "^11.0.2"
   }
 }
