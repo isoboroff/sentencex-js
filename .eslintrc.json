@@ -11,11 +11,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
     "babelOptions": {
-      "plugins": [
-        "@babel/plugin-syntax-import-assertions"
-      ]
+      "plugins": ["@babel/plugin-syntax-import-assertions"]
     }
   },
   "rules": {}
 }
-
