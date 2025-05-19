@@ -1,23 +1,22 @@
-import LANGUAGE_FALLBACKS from './fallbacks.json' assert { type: 'json' }
+import LANGUAGE_FALLBACKS from "./fallbacks.json" with { type: "json" };
 
-import languages from './languages/index.js'
+import languages from "./languages/index.js";
 
-function getLanguageClass (language) {
+function getLanguageClass(language) {
   if (language in languages) {
-    return languages[language]
+    return languages[language];
   }
 
-  const fallbacks = LANGUAGE_FALLBACKS[language] || ['en']
+  const fallbacks = LANGUAGE_FALLBACKS[language] || ["en"];
   for (const fallbackLanguage of fallbacks) {
-    const cls = getLanguageClass(fallbackLanguage)
+    const cls = getLanguageClass(fallbackLanguage);
     if (cls) {
-      return cls
+      return cls;
     }
   }
 }
 
-export default function segment (language, text) {
-  const className = getLanguageClass(language)
-  // eslint-disable-next-line new-cap
-  return new className().segment(text)
+export default function segment(language, text) {
+  const className = getLanguageClass(language);
+  return new className().segment(text);
 }
